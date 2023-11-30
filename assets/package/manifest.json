@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.12",
+  "version": "6.1.0",
+  "id": "[[MICROSOFT_TEAMS_APP_MANIFEST_ID]]",
+  "packageName": "[[MICROSOFT_TEAMS_APP_MANIFEST_PACKAGE_NAME]]",
+  "developer": {
+    "name": "Markiter",
+    "websiteUrl": "https://markiter.ai",
+    "privacyUrl": "https://markiter.ai/privacy",
+    "termsOfUseUrl": "https://markiter.ai/tos",
+    "mpnId": ""
+  },
+  "localizationInfo": {
+    "defaultLanguageTag": "en",
+    "additionalLanguages": []
+  },
+  "name": {
+    "short": "",
+    "full": ""
+  },
+  "description": {
+    "short": "",
+    "full": ""
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#000000",
+  "staticTabs": [
+    {
+      "entityId": "ai.markiter",
+      "scopes": [
+        "personal"
+      ],
+      "context": [
+        "personalTab"
+      ],
+      "name": "Home",
+      "contentUrl": "https://[[WEB_PUBLIC_HOST]]",
+      "websiteUrl": "https://markiter.ai"
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "devicePermissions": [
+    "openExternal"
+  ],
+  "validDomains": [
+    "[[MICROSOFT_TEAMS_APP_MANIFEST_VALID_DOMAINS]]",
+    "*.markiter.app"
+  ],
+  "webApplicationInfo": {
+    "id": "[[MICROSOFT_TEAMS_APP_MANIFEST_WEBAPPLICATIONINFO_ID]]",
+    "resource": "[[MICROSOFT_TEAMS_APP_MANIFEST_WEBAPPLICATIONINFO_RESOURCE]]"
+  },
+  "showLoadingIndicator": true,
+  "isFullScreen": true,
+  "defaultInstallScope": "personal",
+  "configurableProperties": [
+    "name",
+    "shortDescription",
+    "longDescription",
+    "smallImageUrl",
+    "largeImageUrl",
+    "accentColor"
+  ],
+  "defaultBlockUntilAdminAction": false,
+  "publisherDocsUrl": "https://markiter.ai"
+}
